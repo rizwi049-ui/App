@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-ai-chat
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OLLAMA_API_KEY
+        sync: false
+      - key: ACCESS_CODE
+        sync: false
